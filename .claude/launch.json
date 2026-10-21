@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "lanchavr", "runtimeExecutable": "python", "runtimeArgs": ["serve.py", "--port", "8784"], "port": 8784 }
+  ]
+}

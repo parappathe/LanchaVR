@@ -1,0 +1,15 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #000; font-family: system-ui, sans-serif; }
+#app canvas { display: block; }
+#vr {
+  position: fixed; right: 20px; bottom: 20px; padding: 14px 26px; font-size: 20px; font-weight: 800;
+  border: 0; border-radius: 12px; background: #4fd1e8; color: #04202a; cursor: pointer;
+}
+#vr:disabled { background: #555; color: #ccc; cursor: default; }
+#hint {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); color: #fff; font-size: 16px;
+  background: rgba(0,0,0,0.5); padding: 8px 14px; border-radius: 10px; pointer-events: none; white-space: nowrap;
+}
+#hint:empty { display: none; }
+#fps { position: fixed; left: 10px; top: 10px; color: #ffdf6e; font: bold 16px monospace; background: rgba(0,0,0,0.5); padding: 4px 8px; display: none; }
+#hudbox { position: fixed; left: 16px; top: 16px; width: min(380px, 40vw); display: none; pointer-events: none; }
+#hudbox canvas { width: 100%; height: auto; display: block; }
